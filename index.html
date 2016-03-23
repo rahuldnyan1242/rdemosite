@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> rtPanel	</title>
+	<link rel="stylesheet" href="css/style.css" >
+	<script type="text/javascript" >
+		var imagecount = 1;
+		var total = 5;
+		
+		function slide(x){
+			var Image = document.getElementById('slideimage');
+			imagecount += x;
+			if(imagecount > total){
+				imagecount = 1;
+			}
+			if(imagecount < 1){
+				imagecount = total;
+			}
+			
+			Image.src = "Images/img" + imagecount + ".jpg";
+		}
+	</script>
+</head>
+
+<body>
+<div class="desbody">
+	<div id="container">
+		<div id="head_container">
+			<div id="header">
+				<div id="header1">
+					<div id="logos">
+						<img id="logo" src="Images/3.png" alt="logo`s image">
+						<h3> rt<font face="Colonna MT" >P</font>anel </h3>
+					</div>
+					
+				</div>
+				
+				<div id="search">
+					<input type="search" id="searchbar" placeholder="Google&trade; Site Search" name="sitesearch" maxlength="50"> 
+					<input type="button" value="Search"  > 
+				</div>
+			</div>
+		</div>	
+		<div id="navlist">
+			<ul class="navigationlist">
+				<li> <a href="#"> Home </a></li>
+				<li> <a href="#">About Us </a></li>
+				<li> <a href="#">Project </a></li>
+				<li> <a href="#">Reviews </a></li>
+				<li> <a href="#">Contact Us </a></li>
+			</ul>
+		</div>	
+	</div>			
+	
+	<div id="slider">
+		<div id="slide">
+			<img id="slideimage" src="Images/img1.jpg" alt="Exhibition image" >
+			<div id="previous"> <img id="left" src="Images/la.png" alt="prev" width="40" height="50" onClick="slide(-1)" > </div>
+			
+			<div id="next"> <img id="right" src="Images/ra.png" alt="next" width="40" height="50" onClick="slide(1)" > </div>
+		</div>
+		
+		<div id="aside">
+			<div id="welcome"> Welcome to rtPanel</div>
+			<div id="intro"> <img id="passpic" src="Images/7.png" alt="Passport Photo" height="120" width="100" >
+			The mission of rtPanel is to produce software products that multiply the power and efficiency of empirical scientific 	    			research in the social sciences.A central goal is to expand access to complex data sources and to the advanced methods of scientific    			investigation needed to analyze them. 
+			</div>
+			<div id="read"> <a href="#">Read More... </a> </div>
+		</div>
+	</div>
+	
+	<div id="series_container">
+		<div id="series">
+			<div id="ser_previous"> <img id="sprevious" src="Images/11.png" alt="prev" > </div>
+			
+			<div class="ser_main">
+				<div class="ved"><img src="Images/s1.jpg" alt="s1 image" > </div>
+				<div class="ved"><img src="Images/s2.jpg" alt="s2 image" > </div>
+				<div class="ved"><img src="Images/s3.jpg" alt="s3 image" > </div>
+				<div class="ved"><img src="Images/s4.jpg" alt="s4 image" > </div>
+				<div class="ved"><img src="Images/s5.jpg" alt="s5 image" > </div>
+				<div class="ved"><img src="Images/s6.jpg" alt="s6 image" > </div>
+			 </div>
+			
+			<div id="ser_next"> <img id="snext" src="Images/10.png" alt="next" > </div>
+		</div>
+	</div>
+	
+	<div id="sport">
+		<div id="sport_exhibition">
+			<div id="sportshead"> Glimpses of Exhibition </div>
+			<div id="sportpics">
+				<div class="golf"> 
+					<div class="simg"><img src="Images/18.jpg" width="142" height="120" style="border-radius:10px;" alt="hockey" > </div>
+					<div class="sname"><a href="#"> Hockey </a></div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"> <img src="Images/12.jpg" width="142" height="120" style="border-radius:10px;" alt="golf" >  </div>
+					<div class="sname"><a href="#"> Golf</a> </div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/15.jpg" width="142" height="120" style="border-radius:10px;" alt="basketball" > </div>
+					<div class="sname"><a href="#"> BasketBall</a> </div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/16.jpg" width="142" height="120" style="border-radius:10px;" alt="cricket" > </div>
+					<div class="sname"><a href="#"> cricket </a></div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/17.png" width="142" height="120" style="border-radius:10px;" alt="tennis" > </div>
+					<div class="sname"><a href="#"> Tennis </a></div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/19.jpg" width="142" height="120" style="border-radius:10px;" alt="icehockey" > </div>
+					<div class="sname"><a href="#"> IceHockey</a> </div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/13.jpg" width="142" height="120" style="border-radius:10px;" alt="football" > </div>
+					<div class="sname"><a href="#">Football </a></div>
+				</div>
+				<div class="golf"> 
+					<div class="simg"><img src="Images/20.jpg" width="142" height="120" style="border-radius:10px;" alt="kabaddi" > </div>
+					<div class="sname"><a href="#"> Kabaddi </a></div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="news">
+			<div id="newshead"> News </div>
+			<div id="newsbody">
+				<div id="newslogo"> <img src="Images/01.png" width="120" height="100" alt="newlogo`s image" > </div>
+				<div id="newstitle">
+					<b> The exhibition will be organized to be the perfect forum.  </b> <br><br>
+					<p>March 19, 2016 </p>
+				</div>
+				<div id="newslinks"> 
+					<ul>
+						<li><a href="#">Website coming  soon  </a> </li>
+						<li><a href="#">Best sports photographer awards  </a> </li>
+						<li><a href="#">Educational Workshop and meeting  </a> </li>
+						<li><a href="#">Website coming  soon  </a> </li>
+						<li><a href="#">Best sports photographer awards  </a> </li>
+						<li><a href="#">Educational Workshop and meeting  </a> </li>
+					</ul>
+				</div>
+				<div id="morenews">
+					<img src="Images/le.png" height="30" width="22" alt="left arrow" >
+					<img src="Images/re.png" height="30" width="22" alt="right arrow" >
+					<a href="#"> More News </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="partners">
+		<div id="par_head"> Our Partners </div>
+		<div id="par_main"> 
+			<div id="par_previous">
+				<img src="Images/11.png" width="50" height="100" alt="prev" >
+			</div>
+			<div id="par_body">
+				<div class="part"> <img src="Images/adidas.png" width="150" height="90" alt="adidas" > </div>
+				<div class="part"> <img src="Images/coke.jpg" width="150" height="80" alt="coco-cola" > </div>
+				<div class="part"> <img src="Images/emirates.png" width="150" height="80" alt="emirates" > </div>
+				<div class="part"> <img src="Images/sony.jpg" width="150" height="80" alt="sony" ></div>
+				<div class="part"><center> <img src="Images/visa.png" width="150" height="50" alt="visa" ></center> </div>
+			</div>
+			<div id="par_next">
+				<img src="Images/10.png" width="50" height="100" alt="next" >
+			</div>
+		</div>
+	</div>
+	
+	<div id="trades">
+		<div id="pages">
+			<div id="page_head"> Pages </div>
+			<div id="page_links"> 
+				<ul>
+					<li><a href="#"> Home </a> </li>
+					<li><a href="#"> About Us </a> </li>
+					<li><a href="#"> Project</a> </li>
+					<li><a href="#"> Reviews </a> </li>
+					<li><a href="#"> Contact Us </a> </li>
+				</ul>
+			</div>
+
+		</div>
+		<div id="imp_links">
+			<div id="imp_head"> Important Links </div>
+			<div id="imp_list"> 
+				<ul>
+					<li><a href="#"> www.rtcamp.com  </a> </li>
+					<li><a href="#"> www.devilsworkshop.com </a> </li>
+					<li><a href="#"> www.rtpanel.com</a> </li>
+					<li><a href="#"> www.bloggertowp.com</a> </li>
+					<li><a href="#"> www.wpngnix.com</a> </li>
+				</ul>
+			</div>
+		</div>
+		<div id="trademark">
+			
+			<div id="copyright">
+				<img src="Images/rtpanel.png" alt="rtpanel" >
+				<p>Copyright&copy; 2015. All rights reserved.</p>
+				<ul>
+					<li><a href="#"> Terms of Use </a> </li>
+					<li><a href="#"> Privacy Policy </a> </li>
+					<li><a href="#"> Designed by RDX </a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer id="the_footer">
+		
+	</footer>
+	
+</div>	
+</body>
+</html>
